@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Page Title</title>
+    </head>
+
+    <body>
+        {{img|length}} found
+        {%for i in img%}
+            <li><img height="70px" width="70px" alt="{{i}}" src="{{webpage}}/{{i}}"></li> or view <a href="{{i}}">here</a> 
+        {%endfor%}
+    </body>
+</html>
