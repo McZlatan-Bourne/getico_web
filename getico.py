@@ -14,8 +14,8 @@ def index():
         page_type = request.form["page_type"]
         img_format = request.form["img_format"]
         try:
-            if webpage.find("http://") == -1:
-                error = "Invalid url. Url should contain \"http://\" or \"https://\""
+            if webpage.find("http://www.") == -1:
+                error = "Invalid url. Url should contain \"http://www.\" or \"https://www.\""
                 return render_template("getico.html", error=error)
             elif webpage.find("http://") == 0:
                 try:
